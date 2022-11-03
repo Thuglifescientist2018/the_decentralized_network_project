@@ -1,0 +1,29 @@
+@import '../../styles/settings';
+.Card {
+
+    position: relative;
+    background-color: $bg_primary;
+    padding: $p1;
+    width: 200px;
+    height: 200px;
+   
+    img {
+        position:absolute;
+        height: 100%;
+        width: 100%;
+        left: -1%;
+      
+        
+        
+    }
+    
+    a {
+            color: $color2;
+            position: absolute;
+            top: 50%;
+            left: 20%;
+            font-weight: 800;
+    }
+    
+    
+}

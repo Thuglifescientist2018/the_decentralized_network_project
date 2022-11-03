@@ -1,4 +1,29 @@
-.bg_one {
-    background: black;
-    color: white;
+@import './settings';
+
+.home {
+    #home_header {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem;
+       
+    }
+    .main {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       .clients {
+        ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            li {
+                padding: 1rem;
+            }
+        }
+       }
+    }
 }
+

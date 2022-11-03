@@ -2,7 +2,7 @@
 import find from 'local-devices';
 import { useEffect, useState } from 'react';
 import styles from '../styles/Home.module.scss';
-
+import { Card } from '../components/Card';
 
 export async function getServerSideProps(context) {
 
@@ -45,9 +45,10 @@ console.log(myip)
   },[])
 
   return (
-    <div id="Home" className={styles.bg_one}>
+    <div id="Home" className={styles.home}>
+      <header id={styles.home_header}>
      <h1>The Decentralized Network Project</h1>
-     <button onClick={()=> {
+     <button className={styles.btn_primary} onClick={()=> {
       if(typeof history !== 'undefined') {
         history.back();
       }
@@ -56,13 +57,23 @@ console.log(myip)
         () => {}
       }
      }}> Go Previous</button>
+
+      </header>
+      <main className={styles.main}>
      {queryMatchesRefferersIP ?
-        <div id="clients">
+        <div id="clients" className={styles.clients}>
+          <ul className={styles.container}>
+
+         
         {clients.length > 0 ? clients.map((client, key) => <li key={key}>
-          <a href={`http://${client.ip}:3000/?query=${myip}`}>{client.ip}</a>
+          <Card url={`http://${client.ip}:3000/?query=${myip}`} ip={client.ip} />
+         
         </li>): null}
+        </ul>
      </div>
-      : <h1>Coming Soon!</h1>}
+      : <h2>Coming Soon</h2>}
+
+      </main>
     
   
     
