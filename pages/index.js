@@ -3,7 +3,7 @@ import find from 'local-devices';
 import { useEffect, useState } from 'react';
 import styles from '../styles/Home.module.scss';
 import { Card } from '../components/Card';
-
+import PCContent from '../components/PCContent';
 export async function getServerSideProps(context) {
 
   const { req } = context;
@@ -71,7 +71,8 @@ console.log(myip)
         </li>): null}
         </ul>
      </div>
-      : <h2>Coming Soon</h2>}
+      : 
+      <PCContent />}
 
       </main>
     

@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@svgr/webpack": "^6.5.1",
     "local-devices": "^4.0.0",
     "next": "13.0.0",
     "nextjs-cors": "^2.1.1",
