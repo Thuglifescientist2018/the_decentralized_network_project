@@ -1,0 +1,26 @@
+.scroll_container {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    background: #efeded;
+    padding: 1rem;
+    .sc_btn {
+        padding: 0.5rem;
+        background: black;
+        color: white;
+    }
+    .sc_btn_next {
+        height: 30px;
+        width: 30px;
+        background: #ccc;
+        margin-left: auto;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        svg {
+            height: 70%;
+        }
+    }
+}
