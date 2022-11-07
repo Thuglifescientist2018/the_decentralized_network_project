@@ -1,0 +1,30 @@
+.side_menu {
+    text-align: center;
+    background: rgb(255, 255, 255);
+    .item {
+        display: block;
+        width: 72px;
+        height: 64px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        padding: 1rem;
+        margin: 0.5rem 0.2rem;
+        width: 90%;
+        border-radius: 10px;
+        &:hover {
+            background: #efeded;
+        }
+      
+
+        a {
+            display: block;
+            height: 25px;
+            font-size: 10px;
+            text-decoration: none;
+            
+        }
+       
+    }
+}
