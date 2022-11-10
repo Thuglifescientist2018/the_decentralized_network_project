@@ -1,0 +1,208 @@
+.viewVideo {
+   display: grid;
+   grid-template-columns: 60% 40%;
+   grid-gap: 1rem;
+ 
+    .videoContainer {
+     width: 100%;
+       
+        
+        video {
+                width: 100%;
+        }
+        .videoTitle {
+          
+            word-break: break-word;
+    font-family: "YouTube Sans","Roboto",sans-serif;
+    font-size: 1.3rem;
+
+    font-weight: 600;
+        }
+        .video_info {
+            display: flex;
+            justify-content: space-between;
+            .channel {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                margin: 1rem 0;
+                .c_logo {
+                    border: 1px solid black;
+                    height: 50px;
+                    width: 50px;
+                    border-radius: 50%;
+                    display: flex;
+                    gap: 1rem;
+                    img {
+                        display: block;
+                    }
+                    .c_logo_info {
+                        .subscribers {
+                            font-size: 10px;
+                            line-height: 0px !important;
+                        }
+                        
+                    }
+                  
+                }
+                .subscribeBtn {
+                    display: block;
+                    padding: 1rem;
+                    border: none;
+                    background: black;
+                    color: white;
+                    border-radius: 30px;
+                    
+                }
+            }
+            .rightInfo {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+
+                .like_and_dislike {
+                    display: flex;
+                    align-items: center;
+                    background: lightgray;
+                    gap: 1rem;
+                   
+                    height: 40px;
+                    border-radius: 20px;
+                   .like, .dislike {
+                       height: 100%;
+                       background: none;
+                       border: none;
+                       padding: 0.5rem;
+                       border-radius: 20px;
+                       
+                       &:hover {
+                        background: rgb(193, 193, 193);
+                       }
+                       
+                    }
+                    .like {
+                        border-right: 1px solid rgb(198, 194, 194);
+                        padding-right: 1rem;
+                    }
+                    .like svg {
+                        transform: rotate(180deg)
+                    }
+                    
+                }
+                .share  {
+                 display: flex;
+                 align-items: center;
+                 gap: 0.5rem;
+               background:rgb(216, 215, 215);
+               padding: 0.5rem;
+               border-radius: 20px;
+               &:hover {
+                background: rgb(200, 198, 198);
+               }
+               
+                }
+                .more {
+                    background:rgb(216, 215, 215);
+                    border-radius: 50%;
+                    padding: 0.5rem;
+                    &:hover {
+                        background: rgb(200, 198, 198);
+                    }
+                }
+            }
+        }
+ 
+    }
+    .description {
+        background:rgb(239, 238, 238);
+        padding: 1rem;
+        width: 100%;
+        margin: 1rem 0;
+    }
+   
+
+            }
+
+    
+ // suggested videos
+ .yt_card {
+
+    position: relative;
+    height: 180px;
+    width: 180px;
+    display: flex;
+    margin: 1rem 0;
+   
+   
+       .vid_container {
+           border-radius: 10px;
+           height: 104px;
+           width: 100%;
+           
+           display: flex;
+           align-items: center;
+           video {
+               width: 180px;
+               border-radius: 10px;
+   
+           }
+           
+       }
+       .video_info {
+           width: 100%;
+           .username {
+               position: relative;
+               left: 0;
+               font-size: 12px;
+               margin: 0px 5px;
+               line-height: 1.2;
+              
+           }
+           .pp_and_video_title {
+               display: flex;
+               gap: 1rem;
+               margin-left:  0.3rem;
+               padding: 0.1rem 0;
+               
+               .v_title {
+                   width: 70%;
+                    overflow: hidden;
+                   font-size: 12px;
+                   font-weight: 700;
+                   text-overflow: ellipsis;
+                   margin: 0.4rem 0;
+                   
+               }
+               img {
+                   display: block;
+                   border-radius: 50%;
+                   height: 45px;
+                   width: 45px;
+                   display: none;
+               }
+           }
+           .views_and_upload {
+               position: relative;
+               left: 2%;
+               span {
+                font-size: 12px;
+               }
+           }
+       }
+       div   { // > direct child
+       
+          > button {
+
+               display: none;
+               margin:  1rem;
+               width: 90%;
+               border-radius: 20px;
+               border: none;
+               padding: 0.75rem;
+               &:hover {
+                   background: lightgray;
+               }
+           }
+       }
+       
+   }

@@ -47,15 +47,18 @@ max-width: 21vw;
             left: 18%;
         }
     }
-    button {
-        display: block;
-        margin: 1rem;
-        width: 90%;
-        border-radius: 20px;
-        border: none;
-        padding: 0.75rem;
-        &:hover {
-            background: lightgray;
+    .baseBtns {
+
+        button {
+            display: block;
+            margin: 1rem;
+            width: 90%;
+            border-radius: 20px;
+            border: none;
+            padding: 0.75rem;
+            &:hover {
+                background: lightgray;
+            }
         }
     }
     
